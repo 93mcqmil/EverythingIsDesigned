@@ -1,0 +1,250 @@
+*,
+*::after *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.navigation-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.navigation-container img {
+  margin-left: 10rem;
+}
+.navigation-container nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  margin-right: 15rem;
+}
+.navigation-container nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.navigation-container nav ul li a:hover {
+  color: #6e6a6a;
+}
+
+.box-container {
+  color: white;
+  background-color: #333333;
+  height: 50vh;
+}
+.box-container .box-info {
+  text-align: center;
+  padding: 8rem;
+}
+.box-container .box-info p {
+  font-family: Ubuntu;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.box-container .box-info .btn {
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+  border-radius: 6.25rem;
+  background-color: white;
+  color: #000000;
+  font-family: "Ubuntu";
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  font-weight: 700;
+}
+
+.card-container {
+  display: grid;
+  margin-top: 2rem;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.card-container .card-content1 {
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+}
+.card-container .card-content1 h2 {
+  background-color: white;
+  margin-top: 0.5rem;
+}
+.card-container .card-content1 p {
+  background-color: white;
+  max-width: 95%;
+}
+.card-container .card-content1 .img-container {
+  width: 100%;
+  background-color: #bdbdbd;
+}
+.card-container .card-content1 .img-container img {
+  margin: auto;
+  display: block;
+}
+
+.card-content2 {
+  flex: 1;
+  display: grid;
+  flex-direction: column;
+}
+.card-content2 h2 {
+  background-color: white;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.card-content2 p {
+  background-color: white;
+}
+.card-content2 .img-container {
+  background-color: #bdbdbd;
+}
+.card-content2 .img-container img {
+  display: block;
+  margin: auto;
+}
+
+/***************************************/
+.card-content3,
+.card-content4,
+.card-content5 {
+  grid-column: auto;
+  flex-direction: column;
+}
+.card-content3 h2,
+.card-content4 h2,
+.card-content5 h2 {
+  background-color: white;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  font-family: "Ubuntu";
+}
+.card-content3 p,
+.card-content4 p,
+.card-content5 p {
+  background-color: white;
+}
+.card-content3 .img-container,
+.card-content4 .img-container,
+.card-content5 .img-container {
+  background-color: #bdbdbd;
+}
+.card-content3 .img-container img,
+.card-content4 .img-container img,
+.card-content5 .img-container img {
+  display: block;
+  margin: auto;
+}
+
+.rectangle-box {
+  width: 25%;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+.rectangle-box .ellipse {
+  width: 5rem;
+  height: 5rem;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-left: 9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.rectangle-box h3 {
+  text-align: center;
+  font-family: "Ubuntu";
+  font-style: italic;
+  line-height: normal;
+}
+.rectangle-box p {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Ubuntu";
+}
+
+.last-container {
+  width: 100%;
+  background-color: #333333;
+  height: 50vh;
+  display: flex;
+  padding: 3rem;
+}
+.last-container .container-items {
+  color: white;
+}
+.last-container .container-items h2 {
+  font-family: Ubuntu;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.last-container .container-items nav ul {
+  list-style-type: none;
+}
+.last-container .container-items nav ul li {
+  color: white;
+  margin-top: 1.5rem;
+}
+.last-container .container-items nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.last-container .class2-content {
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+.last-container .class2-content h2 {
+  margin-left: 14rem;
+  font-family: Ubuntu;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.last-container .class2-content p {
+  width: 28%;
+  text-align: center;
+  color: white;
+  margin: 1rem;
+  margin-left: 30rem;
+}
+.last-container .socialMedia-content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+}
+.last-container .socialMedia-content h2 {
+  font-family: Ubuntu;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.last-container .socialMedia-content .social-media {
+  margin-left: 2rem;
+}
+.last-container .socialMedia-content .media-img {
+  height: 90%;
+}
+
+/*# sourceMappingURL=style.css.map */

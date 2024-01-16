@@ -1,0 +1,265 @@
+@import "./scss/colors";
+@import "./scss/mixins";
+@import "./scss/base";
+@import "./scss/fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: $primary-color;
+}
+
+.navigation-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  img {
+    margin-left: 10rem;
+  }
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    margin-right: 15rem;
+
+    li {
+      a {
+        @include style-link-text($navbar-color);
+
+        &:hover {
+          color: $hover-navbar-color;
+        }
+      }
+    }
+  }
+}
+.box-container {
+  color: $primary-color;
+  background-color: $box-rectangle-color;
+  height: 50vh;
+
+  .box-info {
+    text-align: center;
+    padding: 8rem;
+
+    p {
+      font-family: Ubuntu;
+      font-size: 4rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .btn {
+      padding: 1.5rem 2.5rem;
+      text-align: center;
+      border-radius: 6.25rem;
+      background-color: $primary-color;
+      color: $button-text-color;
+      font-family: $primary-font;
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.card-container {
+  display: grid;
+  margin-top: 2rem;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+
+  .card-content1 {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      background-color: white;
+      margin-top: 0.5rem;
+    }
+    p {
+      background-color: white;
+      max-width: 95%;
+    }
+
+    .img-container {
+      width: 100%;
+      background-color: #bdbdbd;
+
+      img {
+        margin: auto;
+        display: block;
+      }
+    }
+  }
+}
+
+.card-content2 {
+  flex: 1;
+
+  display: grid;
+  flex-direction: column;
+
+  h2 {
+    background-color: white;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  p {
+    background-color: white;
+  }
+  .img-container {
+    background-color: #bdbdbd;
+
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+/***************************************/
+
+.card-content3,
+.card-content4,
+.card-content5 {
+  grid-column: auto;
+  flex-direction: column;
+
+  h2 {
+    background-color: white;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-family: "Ubuntu";
+  }
+  p {
+    background-color: white;
+  }
+  .img-container {
+    background-color: #bdbdbd;
+
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+}
+.rectangle-box {
+  width: 25%;
+  background-color: $primary-color;
+  margin: auto;
+  margin-bottom: 5rem;
+
+  .ellipse {
+    width: 5rem;
+    height: 5rem;
+    background-color: $ellipse-font;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-left: 9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    text-align: center;
+    font-family: "Ubuntu";
+    font-style: italic;
+    line-height: normal;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: "Ubuntu";
+  }
+}
+
+.last-container {
+  width: 100%;
+  background-color: $box-rectangle-color;
+  // background-color: orange;
+  height: 50vh;
+  display: flex;
+  padding: 3rem;
+
+  .container-items {
+    color: $primary-color;
+
+    h2 {
+      font-family: Ubuntu;
+      font-size: 1.625rem;
+      font-style: normal;
+      font-weight: 700;
+    }
+    nav ul {
+      list-style-type: none;
+
+      li {
+        color: $primary-color;
+        margin-top: 1.5rem;
+
+        a {
+          color: $primary-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .class2-content {
+    text-align: center;
+    align-items: center;
+    color: $primary-color;
+
+    h2 {
+      margin-left: 14rem;
+      font-family: Ubuntu;
+      font-size: 1.625rem;
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    p {
+      width: 28%;
+      text-align: center;
+      color: $primary-color;
+      margin: 1rem;
+
+      margin-left: 30rem;
+    }
+  }
+
+  .socialMedia-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: $primary-color;
+
+    h2 {
+      font-family: Ubuntu;
+      font-size: 1.625rem;
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    .social-media {
+      margin-left: 2rem;
+    }
+    .media-img {
+      height: 90%;
+    }
+  }
+}
